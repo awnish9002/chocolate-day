@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#5d3a1a">
+  <title>🍫 Chocolate Day — Sweet Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chocolate-rain" id="chocolateRain" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <span class="logo">🍫 Chocolate Day</span>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Dark mode">🌙</button>
+        <button class="nav-btn" id="navToggle" aria-label="Toggle menu">☰</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#letter">Letter</a></li>
+        <li><a href="#love">Send Love</a></li>
+        <li><a href="#facts">Fun Facts</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="title-line">Happy</span>
+          <span class="title-line chocolate-text">Chocolate Day</span>
+          <span class="title-line">🍫</span>
+        </h1>
+        <p class="hero-subtitle">everything’s better with chocolate & love — made this little page just for you</p>
+        <p class="hero-quote" id="heroQuote">"Life is like a box of chocolates."</p>
+        <button class="cta-btn" id="unwrapBtn">Unwrap the love 💝</button>
+      </div>
+      <div class="hero-chocolates">
+        <div class="choco-piece choco-1" data-message="You're sweet!">🍫</div>
+        <div class="choco-piece choco-2" data-message="So yummy!">❤️</div>
+        <div class="choco-piece choco-3" data-message="Sweet you!">🍫</div>
+        <div class="choco-piece choco-4" data-message="Love it!">💕</div>
+        <div class="choco-piece choco-5" data-message="Delicious!">🍫</div>
+      </div>
+      <div class="floating-hearts" aria-hidden="true">
+        <span>♥</span><span>♥</span><span>♥</span><span>♥</span><span>♥</span>
+      </div>
+    </section>
+
+    <section class="letter-section" id="letter">
+      <p class="letter-hint" id="letterHint">Scroll down to unwrap the chocolate 🍫</p>
+      <button type="button" class="letter-tap-unwrap" id="letterTapUnwrap" aria-label="Unwrap chocolate">Tap to unwrap 🍫</button>
+      <div class="letter-sticky">
+        <div class="chocolate-letter-box" id="chocolateLetterBox">
+          <div class="chocolate-bar-face"></div>
+          <div class="letter-paper">
+            <h3 class="letter-greeting">Dear Sweet Soul,</h3>
+            <p class="letter-body">Happy Chocolate Day! I wanted to give you something sweet — so here’s a little note wrapped like a chocolate bar. Scroll or tap to unwrap it. Thank you for being you. 🍫💕</p>
+            <p class="letter-sign">With love & chocolate,<br><span class="letter-name">Someone who adores you</span></p>
+          </div>
+          <div class="wrapper-peel" aria-hidden="true">
+            <span class="wrapper-label">🍫 CHOCOLATE DAY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="love-section" id="love">
+      <h2 class="section-title">Send a Chocolate Love Note 💌</h2>
+      <div class="love-card-wrapper">
+        <div class="love-card" id="loveCard">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="card-ribbon"></div>
+              <span class="card-emoji">🍫</span>
+              <p>Tap to open</p>
+            </div>
+            <div class="card-back">
+              <p class="card-message">You make my world sweeter. Happy Chocolate Day! 🍫💕</p>
+              <p class="card-from">— With love</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-message">
+        <label for="customText">Or write your own message here:</label>
+        <textarea id="customText" rows="3" placeholder="Write something from the heart..."></textarea>
+        <button class="small-btn" id="updateMessage">Update message</button>
+      </div>
+    </section>
+
+    <section class="facts-section" id="facts">
+      <h2 class="section-title">Sweet Facts About Chocolate 🧁</h2>
+      <div class="facts-grid">
+        <article class="fact-card" tabindex="0">
+          <span class="fact-emoji">🌿</span>
+          <h3>Cacao Tree</h3>
+          <p>Chocolate comes from the cacao tree — "Theobroma cacao" means "food of the gods."</p>
+        </article>
+        <article class="fact-card" tabindex="0">
+          <span class="fact-emoji">💝</span>
+          <h3>Feel-Good</h3>
+          <p>Chocolate can boost serotonin and make you feel happier. Science says so!</p>
+        </article>
+        <article class="fact-card" tabindex="0">
+          <span class="fact-emoji">✨</span>
+          <h3>Ancient Love</h3>
+          <p>The Mayans and Aztecs drank chocolate as a sacred, luxurious drink.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <h2 class="section-title">Chocolate Moods 🎨</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-mood="Melty">🍫</div>
+        <div class="gallery-item" data-mood="Crunchy">🍩</div>
+        <div class="gallery-item" data-mood="Smooth">🧁</div>
+        <div class="gallery-item" data-mood="Sweet">🍬</div>
+        <div class="gallery-item" data-mood="Cozy">☕</div>
+        <div class="gallery-item" data-mood="Yum">🍰</div>
+      </div>
+      <p class="gallery-hint">Tap or hover to see the mood — tap again for a sparkle! ✨</p>
+    </section>
+
+    <section class="quote-section" id="quotes">
+      <h2 class="section-title">Chocolate Wisdom 🍬</h2>
+      <div class="quote-box">
+        <p class="quote-text" id="quoteText">"All you need is love. But a little chocolate now and then doesn't hurt."</p>
+        <button class="small-btn quote-btn" id="newQuote">Another quote</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-handmade">Handmade with 🍫 &amp; 💕 for you</p>
+    <p class="footer-date">Chocolate Day — Feb 9 · share the sweetness!</p>
+  </footer>
+
+  <div class="tooltip" id="tooltip"></div>
+  <script src="script.js"></script>
+</body>
+</html>
